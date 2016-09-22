@@ -22,7 +22,7 @@ public class rfid_steps {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
-    
+
     @Given("^I am in proximity of an RFID Tag$")
     public void i_am_in_proximity_of_an_RFID_Tag() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
