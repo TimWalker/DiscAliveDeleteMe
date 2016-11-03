@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    configurations.all {
+        resolutionStrategy {
+            force 'info.cukes:cucumber-jvm-deps:1.0.3'
+        }
+    }
 }
 
 dependencies {
@@ -32,3 +37,4 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'info.cukes:cucumber-jvm-deps:1.0.3'
 }
+

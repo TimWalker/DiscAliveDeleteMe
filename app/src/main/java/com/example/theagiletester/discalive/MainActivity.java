@@ -1,15 +1,16 @@
 package com.example.theagiletester.discalive;
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
+//import android.content.Intent;
+//import android.net.Uri;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+//import android.widget.Toast;
+//
+//import com.google.android.gms.appindexing.Action;
+//import com.google.android.gms.appindexing.AppIndex;
+//import com.google.android.gms.common.api.GoogleApiClient;
 
 
 //A fully functional app at https://github.com/osmas/AndroidNFCReadApp
@@ -34,10 +35,16 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("On Create");
+        Log.d("a","b");
+        Log.d("Tag", "On Create");
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d("onStart","onStart");
+    }
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.activity_main, menu);
@@ -119,4 +126,5 @@ public class MainActivity extends Activity {
 
     private class GoogleApiClient {
     }
+
 }
